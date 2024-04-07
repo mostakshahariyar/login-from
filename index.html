@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/44c48dbaca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>UR admin panel</title>
+  </head>
+  <body>
+    <section class="nav">
+      <div class="md:shadow-lg fixed w-full top-0 z-10 left-0">
+        <nav class="bg-[#3FC495]">
+          <div class="md:flex md:justify-around md:items-center">
+            <a
+              href="/"
+              class="w-40 h-20 flex flex-col justify-center items-center"
+            >
+              <img
+                class="h-auto"
+                src="https://i.ibb.co/1KWBVYx/navlogo.png"
+                alt="nav image"
+              />
+            </a>
+            <div>
+              <ul
+                class="md:flex px-10 md:px-0 lg:flex-row lg:space-x-8 lg:mt-0 pb-5 md:pb-0 md:mb-0 absolute md:static bg-[#3FC495] md:z-auto z-[-1] left-0 w-full transition-all ease-in duration-500 md:opacity-100 opacity-0"
+              >
+                <li>
+                  <a
+                    href="../bus.html"
+                    class="hover:bg-white hover:text-black hover:rounded-full p-5 duration-500 flex justify-center items-center h-8 gap-2 rounded-full text-white"
+                  >
+                    <i class="fa-solid fa-bus"></i>
+                    <span class="font-semibold">Bus</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="../air.html"
+                    class="hover:bg-white hover:text-black hover:rounded-full p-5 duration-500 flex justify-center items-center h-8 gap-2 rounded-full text-white"
+                  >
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <span class="font-semibold">Air</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="../train.html"
+                    class="hover:bg-white hover:text-black hover:rounded-full p-5 duration-500 flex justify-center items-center h-8 gap-2 rounded-full text-white"
+                  >
+                    <i class="fa-solid fa-train"></i>
+                    <span class="font-semibold">Train</span>
+                  </a>
+                </li>
+                <!-- login section
+                 -->
+                <li>
+                  <a
+                    href="../login.html"
+                    class="hover:bg-white hover:text-black hover:rounded-full p-5 duration-500 flex justify-center items-center h-8 gap-2 rounded-full text-white"
+                  >
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span class="font-semibold">Login</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </body>
+</html>
